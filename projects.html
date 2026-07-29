@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Reena P</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">Portfolio</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="education.html">Certifications</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero reveal">
+  <span class="section-num">Projects</span>
+  <h1>Things I've shipped.</h1>
+  <p>Each project started from a real problem, not a tutorial.</p>
+</div>
+
+<section class="section-tight">
+  <div class="proj-grid reveal">
+
+    <div class="proj-card">
+      <h4><i class="fa-solid fa-wind"></i>AI-Driven Health Tracker for Air Pollution Effects</h4>
+      <p>A web app that assesses health risk from PM2.5 pollution data.</p>
+      <ul>
+        <li>Built AI-based health recommendations from air quality readings</li>
+        <li>Visualized pollution trends over time</li>
+      </ul>
+      <div class="proj-stack tag-row">
+        <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <h4><i class="fa-solid fa-water"></i>AI-Based Flood Awareness System</h4>
+      <p>Flood prediction and visualization for Tamil Nadu using real-time rainfall data.</p>
+      <ul>
+        <li>Built an ML-based flood risk forecasting model</li>
+        <li>Designed an interactive dashboard for risk visualization</li>
+      </ul>
+      <div class="proj-stack tag-row">
+        <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">REST APIs</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <h4><i class="fa-solid fa-hand-sparkles"></i>Gesture to Text Converter</h4>
+      <p>An ASL recognition system to assist speech-impaired users via image-based gesture recognition.</p>
+      <ul>
+        <li>Trained a TensorFlow model on ASL datasets</li>
+        <li>Enabled real-time prediction via webcam</li>
+      </ul>
+      <div class="proj-stack tag-row">
+        <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Streamlit</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <h4><i class="fa-solid fa-list-check"></i>Simple To-Do Web Application</h4>
+      <p>A user-friendly task manager with creation and deletion features.</p>
+      <ul>
+        <li>Built an intuitive UI in Flutter</li>
+        <li>Powered by a Spring Boot backend</li>
+      </ul>
+      <div class="proj-stack tag-row">
+        <span class="tag">Java</span><span class="tag">Flutter</span><span class="tag">Spring Boot</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="foot-bottom">
+    <span>Reena P. · Tamil Nadu, India</span>
+    <span>Built with care · 2026</span>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold:0.15 });
+  revealEls.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
