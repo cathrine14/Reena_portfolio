@@ -13,6 +13,7 @@
 
 <nav>
   <div class="logo">Portfolio</div>
+  <button class="nav-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
   <ul>
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -24,12 +25,26 @@
   </ul>
 </nav>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    const toggle = document.querySelector(".nav-toggle");
+    const navUl = document.querySelector("nav ul");
+    if(toggle && navUl){
+      toggle.addEventListener("click", function(){ navUl.classList.toggle("open"); });
+      navUl.querySelectorAll("a").forEach(function(link){
+        link.addEventListener("click", function(){ navUl.classList.remove("open"); });
+      });
+    }
+  });
+</script>
+
 <header class="hero">
   <span class="badge"><span class="dot"></span>Open to work</span>
   <div class="hero-eyebrow">AI &amp; Data Science Engineering · Pre-final year</div>
   <h1 class="hero-name">Reena P.</h1>
   <p class="hero-role"><span class="accent">Machine learning</span>, Real problems, Real code.</p>
   <p class="hero-sub">I learn best by building — currently deep in machine learning, computer vision, and data-driven web apps.</p>
+  <p class="hero-rotate">Currently building with <span class="rotate-word">Machine Learning</span></p>
   <div class="hero-actions">
     <a class="btn btn-primary" href="projects.html">View my projects <i class="fa-solid fa-arrow-right"></i></a>
     <a class="btn btn-ghost" href="contact.html">Get in touch</a>
@@ -54,6 +69,22 @@
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
   }, { threshold:0.15 });
   revealEls.forEach(el=>obs.observe(el));
+
+  const words = ["Machine Learning", "Computer Vision", "Data Science", "Full-Stack Apps"];
+  let wordIdx = 0;
+  const rw = document.querySelector('.rotate-word');
+  if(rw){
+    setInterval(()=>{
+      rw.style.opacity = 0;
+      rw.style.transform = 'translateY(6px)';
+      setTimeout(()=>{
+        wordIdx = (wordIdx + 1) % words.length;
+        rw.textContent = words[wordIdx];
+        rw.style.opacity = 1;
+        rw.style.transform = 'translateY(0)';
+      }, 350);
+    }, 2200);
+  }
 </script>
 </body>
 </html>
