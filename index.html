@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reena P | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">Portfolio</div>
+  <button class="nav-toggle" aria-label="Toggle menu">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<header class="hero" id="home">
+  <span class="badge"><span class="dot"></span>Open to work</span>
+  <div class="hero-eyebrow">AI &amp; Data Science Engineering · Pre-final year</div>
+  <h1 class="hero-name">Reena P.</h1>
+  <p class="hero-role"><span class="accent">Machine learning</span>, Real problems, Real code.</p>
+  <p class="hero-sub">I learn best by building — currently deep in machine learning, computer vision, and data-driven web apps.</p>
+  <p class="hero-rotate">Currently building with <span class="rotate-word">Machine Learning</span></p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#projects">View my projects <i class="fa-solid fa-arrow-right"></i></a>
+    <a class="btn btn-ghost" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<svg class="signal-divider" viewBox="0 0 1200 40" preserveAspectRatio="none">
+  <path d="M0,20 Q60,5 120,20 T240,20 T360,20 T480,20 T600,20 T720,20 T840,20 T960,20 T1080,20 T1200,20"/>
+  <circle class="pulse-dot" r="3.5" cy="20"><animateMotion dur="6s" repeatCount="indefinite" path="M0,0 Q60,-15 120,0 T240,0 T360,0 T480,0 T600,0 T720,0 T840,0 T960,0 T1080,0 T1200,0"/></circle>
+</svg>
+
+<section id="about">
+  <div class="section-head reveal-right">
+    <span class="section-num">About</span>
+    <h2>Curious by default, methodical by training.</h2>
+  </div>
+  <div class="about-grid">
+    <div class="stat-card reveal">
+      <div class="stat-grid">
+        <div><div class="num">3</div><div class="label">Internships completed</div></div>
+        <div><div class="num">5</div><div class="label">Independent projects</div></div>
+        <div><div class="num">200+</div><div class="label">Problems solved, SkillRack</div></div>
+        <div><div class="num">8.19</div><div class="label">CGPA / 10</div></div>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:0.15s;">
+      <p style="color:var(--slate); font-size:1.04rem; margin-bottom:1rem;">I like solving problems I actually notice — not ones from a tutorial.</p>
+      <p style="color:var(--slate); font-size:1.04rem; margin-bottom:1rem;">I'm studying Artificial Intelligence and Data Science Engineering at J.P. College of Engineering, Tenkasi, with a growing focus on machine learning and computer vision. I like understanding how a system reasons over data, not just how to call a library.</p>
+      <p style="color:var(--slate); font-size:1.04rem; margin-bottom:1rem;">I'm big on teamwork and staying adaptable — group projects and hackathons taught me more about working under pressure than any classroom ever did. I pick things up fast, communicate clearly, and enjoy a bit of leadership when a team needs direction.</p>
+      <p style="color:var(--slate); font-size:1.04rem;">When I'm not coding, I'm usually exploring new AI tools on Kaggle or sketching interface ideas in Figma before I build them.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head reveal-right">
+    <span class="section-num">Skills</span>
+    <h2>What I build with.</h2>
+  </div>
+  <div class="skills-wrap">
+    <div class="skill-card reveal" style="transition-delay:0s;">
+      <h4><i class="fa-solid fa-terminal"></i>Languages</h4>
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">Java</span><span class="tag">SQL</span>
+        <span class="tag">JavaScript</span><span class="tag">Dart</span><span class="tag">HTML/CSS</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.08s;">
+      <h4><i class="fa-solid fa-layer-group"></i>Frameworks</h4>
+      <div class="tag-row">
+        <span class="tag">Flask</span><span class="tag">Spring Boot</span><span class="tag">Flutter</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.16s;">
+      <h4><i class="fa-solid fa-brain"></i>ML / Data Libraries</h4>
+      <div class="tag-row">
+        <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span>
+        <span class="tag">TensorFlow</span><span class="tag">OpenCV</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.24s;">
+      <h4><i class="fa-solid fa-toolbox"></i>Tools &amp; Platforms</h4>
+      <div class="tag-row">
+        <span class="tag">Git/GitHub</span><span class="tag">VS Code</span><span class="tag">Jupyter</span>
+        <span class="tag">Google Colab</span><span class="tag">Kaggle</span><span class="tag">Figma</span><span class="tag">Streamlit</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.32s;">
+      <h4><i class="fa-solid fa-database"></i>Databases</h4>
+      <div class="tag-row">
+        <span class="tag">PostgreSQL</span><span class="tag">MySQL</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:0.4s;">
+      <h4><i class="fa-solid fa-bullseye"></i>Focus areas</h4>
+      <div class="tag-row">
+        <span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">Computer Vision</span>
+        <span class="tag">Data Visualization</span><span class="tag">Designing</span><span class="tag">Deployment</span><span class="tag">REST APIs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="signal-divider" viewBox="0 0 1200 40" preserveAspectRatio="none">
+  <path d="M0,20 Q60,35 120,20 T240,20 T360,20 T480,20 T600,20 T720,20 T840,20 T960,20 T1080,20 T1200,20"/>
+</svg>
+
+<section id="experience">
+  <div class="section-head reveal-right">
+    <span class="section-num">Experience</span>
+    <h2>Internships.</h2>
+  </div>
+  <div class="timeline">
+    <div class="tl-item reveal" style="transition-delay:0s;">
+      <div class="tl-role"><i class="fa-solid fa-laptop-code"></i>Full Stack Development Intern (AI-assisted)</div>
+      <div class="tl-meta mono">IP MEGA · On-site</div>
+      <p>Built full-stack web features end to end, using AI-assisted tools to speed up development across the front and back end.</p>
+    </div>
+    <div class="tl-item reveal" style="transition-delay:0.15s;">
+      <div class="tl-role"><i class="fa-solid fa-robot"></i>Machine Learning Intern</div>
+      <div class="tl-meta mono">Cognifyz Technologies · Remote</div>
+      <p>Worked on the ML track, applying data preprocessing and model-building workflows to real datasets.</p>
+    </div>
+    <div class="tl-item reveal" style="transition-delay:0.3s;">
+      <div class="tl-role"><i class="fa-solid fa-chart-line"></i>Data Science Intern</div>
+      <div class="tl-meta mono">Thiranex · Remote</div>
+      <p>Practiced core data science workflows — data handling, analysis, and visualization — on applied problem sets.</p>
+    </div>
+  </div>
+
+  <div class="section-head reveal-right" style="margin-top:3.5rem;">
+    <span class="section-num">Experience &amp; Achievements</span>
+    <h2>Hackathons &amp; activities.</h2>
+  </div>
+  <div class="achieve-grid">
+    <div class="achieve-card reveal" style="transition-delay:0s;">
+      <h4><i class="fa-solid fa-trophy"></i>Smart India Hackathon</h4>
+      <p>Contributed to a Face Recognition Attendance System and SymbioTree, an IoT-based air quality monitoring project.</p>
+    </div>
+    <div class="achieve-card reveal" style="transition-delay:0.12s;">
+      <h4><i class="fa-solid fa-medal"></i>Tenkasi Hackathon (2026)</h4>
+      <p>Shortlisted for the 24-hour hackathon; built a Household Plastic Shredder &amp; 3D Filament Maker for sustainable plastic waste management.</p>
+    </div>
+    <div class="achieve-card reveal" style="transition-delay:0.24s;">
+      <h4><i class="fa-solid fa-code-branch"></i>SkillRack Coding Profile</h4>
+      <p>Solved 200+ programming problems.</p>
+    </div>
+  </div>
+</section>
+
+<svg class="signal-divider" viewBox="0 0 1200 40" preserveAspectRatio="none">
+  <path d="M0,20 Q60,5 120,20 T240,20 T360,20 T480,20 T600,20 T720,20 T840,20 T960,20 T1080,20 T1200,20"/>
+</svg>
+
+<section id="projects">
+  <div class="section-head reveal-right">
+    <span class="section-num">Projects</span>
+    <h2>Things I've shipped.</h2>
+  </div>
+  <div class="proj-grid">
+
+    <div class="proj-card reveal" style="transition-delay:0s;">
+      <h4><i class="fa-solid fa-wind"></i>AI-Driven Health Tracker for Air Pollution Effects</h4>
+      <p>A web app that assesses health risk from PM2.5 pollution data.</p>
+      <ul>
+        <li>Built AI-based health recommendations from air quality readings</li>
+        <li>Visualized pollution trends over time</li>
+      </ul>
+      <div class="proj-stack tag-row">
+        <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" style="transition-delay:0.1s;">
+      <h4><i class="fa-solid fa-water"></i>AI-Based Flood Awareness System</h4>
+      <p>Flood prediction and visualization for Tamil Nadu using real-time rainfall data.</p>
+      <ul>
+        <li>Built an ML-based flood risk forecasting model</li>
+        <li>Designed an interactive dashboard for risk visualization</li>
+      </ul>
+      <div class="proj-stack tag-row">
+        <span class="tag">Flask</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">REST APIs</span>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" style="transition-delay:0.2s;">
+      <h4><i class="fa-solid fa-hand-sparkles"></i>Gesture to Text Converter</h4>
+      <p>An ASL recognition system to assist speech-impaired users via image-based gesture recognition.</p>
+      <ul>
+        <li>Trained a TensorFlow model on ASL datasets</li>
+        <li>Enabled real-time prediction via webcam</li>
+      </ul>
+      <div class="proj-stack tag-row">
+        <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Streamlit</span>
+      </div>
+    </div>
+
+    <div class="proj-card reveal" style="transition-delay:0.3s;">
+      <h4><i class="fa-solid fa-list-check"></i>Simple To-Do Web Application</h4>
+      <p>A user-friendly task manager with creation and deletion features.</p>
+      <ul>
+        <li>Built an intuitive UI in Flutter</li>
+        <li>Powered by a Spring Boot backend</li>
+      </ul>
+      <div class="proj-stack tag-row">
+        <span class="tag">Java</span><span class="tag">Flutter</span><span class="tag">Spring Boot</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<svg class="signal-divider" viewBox="0 0 1200 40" preserveAspectRatio="none">
+  <path d="M0,20 Q60,35 120,20 T240,20 T360,20 T480,20 T600,20 T720,20 T840,20 T960,20 T1080,20 T1200,20"/>
+</svg>
+
+<section id="education">
+  <div class="section-head reveal-right">
+    <span class="section-num">Certifications</span>
+    <h2>Courses &amp; training.</h2>
+  </div>
+  <div class="chip-list">
+    <div class="chip reveal" style="transition-delay:0s;"><i class="fa-solid fa-certificate"></i>Infosys Springboard — 16 AI courses, shortlisted for Virtual Internship 7.0</div>
+    <div class="chip reveal" style="transition-delay:0.06s;"><i class="fa-solid fa-certificate"></i>12-Day Python Programming — Next Gen Technology</div>
+    <div class="chip reveal" style="transition-delay:0.12s;"><i class="fa-solid fa-certificate"></i>Cross-Platform App Dev (Flutter &amp; Java) — Dr. Sivanthi Adithanar College</div>
+    <div class="chip reveal" style="transition-delay:0.18s;"><i class="fa-solid fa-certificate"></i>SQL Programming Certification — SkillRack</div>
+    <div class="chip reveal" style="transition-delay:0.24s;"><i class="fa-solid fa-certificate"></i>Data Science Workshop — LMES &amp; UPTOR</div>
+    <div class="chip reveal" style="transition-delay:0.3s;"><i class="fa-solid fa-certificate"></i>Virtual Labs Workshop — J.P. College with IIT Delhi (2025)</div>
+    <div class="chip reveal" style="transition-delay:0.36s;"><i class="fa-solid fa-certificate"></i>Stock Market Using AI — Skill Nation</div>
+  </div>
+</section>
+
+<svg class="signal-divider" viewBox="0 0 1200 40" preserveAspectRatio="none">
+  <path d="M0,20 Q60,5 120,20 T240,20 T360,20 T480,20 T600,20 T720,20 T840,20 T960,20 T1080,20 T1200,20"/>
+</svg>
+
+<section id="contact">
+  <div class="section-head reveal-right">
+    <span class="section-num">Contact</span>
+    <h2>Let's build something useful together.</h2>
+  </div>
+  <p class="reveal" style="color:var(--slate); max-width:60ch; margin-top:-1.5rem; margin-bottom:2rem;">I'm looking for internship and entry-level opportunities in Machine Learning, Data Science, or full-stack development. Reach out — I reply fast.</p>
+  <div class="contact-card reveal">
+    <h4 style="display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-inbox" style="color:var(--teal-deep);"></i>Get in touch</h4>
+    <div class="contact-links">
+      <a href="mailto:reena14082006@gmail.com"><i class="fa-solid fa-envelope"></i>reena14082006@gmail.com</a>
+      <a href="https://github.com/cathrine14" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+      <a href="https://www.linkedin.com/in/reenapaulraj" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-bottom">
+    <span>Reena P. · Tamil Nadu, India</span>
+    <span>Built with care · 2026</span>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    const toggle = document.querySelector(".nav-toggle");
+    const navUl = document.querySelector("nav ul");
+    const backdrop = document.getElementById("navBackdrop");
+    function closeMenu(){
+      navUl.classList.remove("open");
+      toggle.classList.remove("active");
+      backdrop.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+    function openMenu(){
+      navUl.classList.add("open");
+      toggle.classList.add("active");
+      backdrop.classList.add("show");
+      document.body.style.overflow = "hidden";
+    }
+    if(toggle && navUl && backdrop){
+      toggle.addEventListener("click", function(){
+        if(navUl.classList.contains("open")){ closeMenu(); } else { openMenu(); }
+      });
+      backdrop.addEventListener("click", closeMenu);
+      navUl.querySelectorAll("a").forEach(function(link){
+        link.addEventListener("click", closeMenu);
+      });
+    }
+  });
+
+  const revealEls = document.querySelectorAll('.reveal, .reveal-right');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold:0.1, rootMargin: '0px 0px -12% 0px' });
+  revealEls.forEach(el=>obs.observe(el));
+
+  const words = ["Machine Learning", "Computer Vision", "Data Science", "Full-Stack Apps"];
+  let wordIdx = 0;
+  const rw = document.querySelector('.rotate-word');
+  if(rw){
+    setInterval(()=>{
+      rw.style.opacity = 0;
+      rw.style.transform = 'translateY(6px)';
+      setTimeout(()=>{
+        wordIdx = (wordIdx + 1) % words.length;
+        rw.textContent = words[wordIdx];
+        rw.style.opacity = 1;
+        rw.style.transform = 'translateY(0)';
+      }, 350);
+    }, 2200);
+  }
+
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 400){ backToTop.classList.add('show'); }
+    else { backToTop.classList.remove('show'); }
+  });
+  backToTop.addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  const navLinks = document.querySelectorAll('nav ul li a');
+  const sections = document.querySelectorAll('section[id], header[id]');
+  const spyObs = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        navLinks.forEach(link=>link.classList.remove('active'));
+        const activeLink = document.querySelector('nav ul li a[href="#' + entry.target.id + '"]');
+        if(activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(sec=>spyObs.observe(sec));
+</script>
+</body>
+</html>
